@@ -1,0 +1,130 @@
+---
+import BackgroundImage from '../assets/background-librabry.jpg';
+---
+
+<div class="text-rows-section py-12">
+    <div class="container mx-auto px-6">
+        <h2 class="text-rows-title">OBSZAR PRAKTYKI</h2>
+        
+        <div class="text-rows-container">
+            <!-- Lewa kolumna -->
+            <div class="text-rows-column">
+                <div class="text-row-item">
+                    <h3 class="text-row-heading">Prawo rodzinne i opiekuńcze</h3>
+                    <p class="text-row-paragraph">
+                        sprawy o rozwód, separację, unieważnienie małżeństwa, ustalenie ojcostwa i macierzyństwa, alimenty, podział majątku dorobkowego, ustanowienie rozdzielności majątkowej, uregulowanie władzy rodzicielskiej, kontaktów z małoletnimi dziećmi.
+                    </p>
+                </div>
+                
+                <div class="text-row-item">
+                    <h3 class="text-row-heading">Prawo karne</h3>
+                    <p class="text-row-paragraph">
+                        sprawy o rozwód, separację, unieważnienie małżeństwa, ustalenie ojcostwa i macierzyństwa, alimenty, podział majątku dorobkowego, ustanowienie rozdzielności majątkowej, uregulowanie władzy rodzicielskiej, kontaktów z małoletnimi dziećmi.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Prawa kolumna -->
+            <div class="text-rows-column">
+                <div class="text-row-item">
+                    <h3 class="text-row-heading">Prawo pracy</h3>
+                    <p class="text-row-paragraph">
+                        rozwiązanie umowy o pracę, przywrócenie do pracy, odszkodowanie.
+                    </p>
+                </div>
+                
+                <div class="text-row-item">
+                    <h3 class="text-row-heading">Prawo administracyjne</h3>
+                    <p class="text-row-paragraph">
+                        reprezentowanie przed Samorządowym Kolegium Odwoławczym, Wojewódzkim Sądem Administracyjnym, Naczelnym Sądem Administracyjnym, sporządzanie skarg do WSA i skarg kasacyjnych do NSA.
+                    </p>
+                </div>
+                
+                <div class="text-row-item">
+                    <h3 class="text-row-heading">Prawo cywilne, w tym prawo spadkowe</h3>
+                    <p class="text-row-paragraph">
+                        umowy, zobowiązania, ochrona własności i posiadania, zniesienie współwłasności, nabycie własności przez zasiedzenie, sprawy o zapłatę, o zadośćuczynienie i odszkodowanie, dziedziczenie, testamenty, dział spadku, zachowek.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.text-rows-section {
+    position: relative;
+    background-image: url(../assets/background-librabry.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    padding: 4rem 1.5rem;
+}
+
+.text-rows-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+}
+
+.text-rows-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 0.75rem;
+}
+
+.text-rows-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .text-rows-container {
+        flex-direction: row;
+    }
+    
+    .text-rows-column {
+        width: 50%;
+    }
+}
+
+.text-rows-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.text-row-item {
+    margin-bottom: 1.5rem;
+}
+
+.text-row-heading {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: rgb(217, 159, 59);
+    margin-bottom: 0.5rem;
+}
+
+.text-row-paragraph {
+    color: #ffffff;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+</style>

@@ -1,0 +1,179 @@
+---
+import adwokatBanner from '../assets/Kancelaria-Adwokacka-Ewa-Porycka.jpg';
+---
+
+<div class="banner">
+    <div class="banner-content">
+        <div class="info-section">
+            <div class="info-content">
+                <h1>KANCELARIA ADWOKACKA EWA PORYCKA</h1>
+                <p class="latin-quote">Hominum causa omne ius constitutum sit</p>
+                <p class="quote-translation">„Wszelkie prawo powinno być stanowione ze względu na ludzi"</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="icon-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-value">adw.ewaporycka@wp.pl</span>
+                            <span class="contact-label">E-mail</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-value">+48 606 644 666</span>
+                            <span class="contact-label">Telefon</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src={adwokatBanner.src} alt="Banner Adwokat Ewa Porycka" />
+            <div class="overlay"></div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .banner {
+        position: relative;
+        width: 100%;
+        max-height: calc(750px - 93px);
+        height: calc(100vh - 93px);
+        overflow: hidden;
+        background-color: #000;
+        margin-top: 0;
+    }
+    
+    .banner-content {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        z-index: 2;
+    }
+    
+    .info-section {
+        position: relative;
+        color: #fff;
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        z-index: 3;
+        width: 50%;
+    }
+    
+    .info-content {
+        max-width: 500px;
+    }
+    
+    .image-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    
+    .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 2;
+    }
+    
+    h1 {
+        font-size: 2.2rem;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+        color: #b1976b;
+    }
+    
+    .latin-quote {
+        font-style: italic;
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+        color: #fff;
+    }
+    
+    .quote-translation {
+        font-size: 1rem;
+        margin-bottom: 3rem;
+        opacity: 0.9;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .icon-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .icon {
+        width: 2rem;
+        height: 2rem;
+        color: #b1976b;
+    }
+    
+    .contact-details {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contact-value {
+        font-size: 1.1rem;
+        color: #fff;
+    }
+    
+    .contact-label {
+        font-size: 0.9rem;
+        color: #b1976b;
+        margin-top: 0.2rem;
+    }
+    
+    @media (max-width: 768px) {
+        .info-section {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            align-items: flex-start;
+            text-align: left;
+            padding-left: 1rem;
+        }
+    }
+</style>
+
+

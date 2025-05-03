@@ -1,0 +1,124 @@
+---
+import heroImage from '../assets/biuro-adwokackie-ewa-porycka-2.jpg';
+---
+
+<div class="about-section">
+  <div class="about-container">
+    <div class="about-content">
+      <h2 class="about-title">O KANCELARII ADWOKACKIEJ</h2>
+      <div class="about-text">
+        <p class="about-paragraph initial-letter">Adwokat Ewa Porycka wykonuje praktykę od 1986 r. w tym jako adwokat od 1996 r. Kancelaria świadczy usługi na rzecz osób fizycznych i podmiotów gospodarczych i w tym zakresie poszczycić się może wieloletnią współpracą z takimi podmiotami jak:</p>
+        
+        <p class="about-partners">
+          Perfetti Van Melle Polska Spolka z o. o., <span class="highlight">Margaret Astor</span>, Distra Cosmetics, Rettig Heating Spółka z o.o.
+        </p>
+        
+        <p class="about-paragraph initial-letter">Świadczone usługi prawne obejmują reprezentowanie podmiotów i osób fizycznych w postępowaniu sądowym i arbitrażowym, oraz przed organami ścigania i urzędami. Ponadto Kancelaria zajmuje się szeroko rozumianym doradztwem prawnym i gospodarczym.</p>
+        
+        <p class="about-paragraph initial-letter">W zakresie wykonywanej praktyki Kancelaria współpracuje z innymi kancelariami, dzięki czemu wzajemnie uzupełnia wiedzę i doświadczenie z różnych dziedzin prawa z myślą o potrzebach jej Klientów.</p>
+      </div>
+    </div>
+    <div class="about-image">
+      <div class="image-container">
+        <img src={heroImage.src} alt="Kancelaria Adwokacka Ewa Porycka" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .about-section {
+    width: 100%;
+    padding: 3rem 1.5rem;
+    background-color: #fff;
+  }
+  
+  .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .about-container {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    
+    .about-content {
+      width: 60%;
+      padding-right: 3rem;
+    }
+    
+    .about-image {
+      width: 40%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  
+  .about-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #333;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid #e5e5e5;
+    padding-bottom: 0.75rem;
+  }
+  
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .about-paragraph {
+    line-height: 1.8;
+    color: #4a4a4a;
+    font-size: 1rem;
+    text-align: justify;
+  }
+  
+  .about-partners {
+    font-weight: 500;
+    line-height: 1.8;
+    color: #4a4a4a;
+    padding-left: 1rem;
+  }
+  
+  .initial-letter::first-letter {
+    font-size: 1.7rem;
+    float: left;
+    line-height: 1.2;
+    margin-right: 0.1em;
+    color: #000000;
+    font-weight: 600;
+    font-family: 'Times New Roman', serif;
+    padding: 0.1em 0.05em 0 0;
+  }
+  
+  .highlight {
+    color: #2563eb;
+    font-weight: 600;
+  }
+  
+  .image-container {
+    width: 100%;
+    max-width: 494px;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+</style>
+

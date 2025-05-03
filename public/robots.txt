@@ -1,0 +1,12 @@
+# robots.txt for ewaporycka.pl
+User-agent: *
+Allow: /
+
+# Disallow admin areas
+
+
+# Sitemap location
+Sitemap: https://adwokatewaporycka.pl/sitemap.xml
+
+# Crawl-delay directive
+Crawl-delay: 10

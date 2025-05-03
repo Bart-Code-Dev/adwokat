@@ -1,15 +1,48 @@
 ---
 import "../styles/global.css";
+import { SEO } from 'astro-seo';
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="pl">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<SEO
+		  title="Kancelaria Adwokacka Ewa Porycka | Adwokat Warszawa"
+		  description="Profesjonalna pomoc prawna w Warszawie. Kancelaria Adwokacka Ewa Porycka oferuje doradztwo i reprezentację w sprawach cywilnych, karnych, rodzinnych i gospodarczych. Skontaktuj się z nami już dziś."
+		  canonical="https://ewaporycka.pl"
+		  openGraph={{
+		    basic: {
+		      title: "Kancelaria Adwokacka Ewa Porycka | Adwokat Warszawa",
+		      type: "website",
+		      image: "/og-image.jpg",
+		      url: "https://ewaporycka.pl",
+		    },
+		    optional: {
+		      description: "Profesjonalna pomoc prawna w Warszawie. Kancelaria Adwokacka Ewa Porycka oferuje doradztwo i reprezentację w sprawach cywilnych, karnych, rodzinnych i gospodarczych.",
+		      locale: "pl_PL",
+		      siteName: "Kancelaria Adwokacka Ewa Porycka"
+		    }
+		  }}
+		  twitter={{
+		    card: "summary_large_image",
+		    site: "@ewaporycka",
+		    title: "Kancelaria Adwokacka Ewa Porycka | Adwokat Warszawa",
+		    description: "Profesjonalna pomoc prawna w Warszawie. Doradztwo i reprezentacja prawna w sprawach cywilnych, karnych i gospodarczych.",
+		    image: "/og-image.jpg"
+		  }}
+		  extend={{
+		    meta: [
+		      { name: "keywords", content: "adwokat warszawa, kancelaria adwokacka, pomoc prawna, prawnik, prawo cywilne, prawo karne, prawo rodzinne, Ewa Porycka" },
+		      { name: "geo.region", content: "PL-MZ" },
+		      { name: "geo.placename", content: "Warszawa" },
+		      { name: "author", content: "Kancelaria Adwokacka Ewa Porycka" }
+		    ]
+		  }}
+		/>
 	</head>
 	<body>
 		<slot />

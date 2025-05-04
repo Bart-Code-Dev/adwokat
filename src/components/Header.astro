@@ -1,9 +1,11 @@
 ---
-import adwokatLogo from '../assets/AdwokaturaPolska_Adwokat-Ewa-Porycka.svg';
+import adwokatLogo from '../assets/AdwokaturaPolska-Ewa-Porycka.svg';
 ---
 
 <header class="header">
-    <img src={adwokatLogo.src} class="" alt="Logo Adwokat Ewa Porycka" />
+    <div class="container">
+        <img src={adwokatLogo.src} class="logo" alt="Logo Adwokat Ewa Porycka" />
+    </div>
 </header>
 
 
@@ -11,9 +13,26 @@ import adwokatLogo from '../assets/AdwokaturaPolska_Adwokat-Ewa-Porycka.svg';
     .header {
         background-color: #b1976b;
         height: 93px;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
 
-        & img {
+        & .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            width: 100%;
+            padding: 0 1.5rem;
+            padding-left: 10px;
+        }
+        & img.logo {
             height: 90px;
+            display: block;
+            transform: translateX(-10px);
         }
     }
 </style>
